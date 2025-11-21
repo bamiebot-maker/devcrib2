@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game | DevCrib Challenge</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="game-header">
+            <h1>🎯 Number Guessing Game</h1>
+            <p class="game-subtitle">Guess the number between 1 and 50</p>
+        </header>
+
+        <main class="game-content">
+            <div class="game-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Attempts:</span>
+                    <span id="attemptsCount" class="stat-value">0</span>
+                </div>
+            </div>
+
+            <div class="game-input-section">
+                <input 
+                    type="number" 
+                    id="guessInput" 
+                    placeholder="Enter your guess (1-50)" 
+                    min="1" 
+                    max="50"
+                    class="guess-input"
+                >
+                <button id="submitBtn" class="btn btn-primary">Submit Guess</button>
+            </div>
+
+            <div class="feedback-section">
+                <p id="feedbackMessage" class="feedback-message">Start guessing!</p>
+            </div>
+
+            <div class="game-actions">
+                <button id="resetBtn" class="btn btn-secondary">Reset Game</button>
+            </div>
+        </main>
+
+        <footer class="game-footer">
+            <p>DevCrib Frontend Challenge - Task 2</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
